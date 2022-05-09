@@ -21,7 +21,7 @@ import { Quiz } from './quiz/entities/quiz.entity';
       // port: 3306,
       // username: 'root',
       // password: 'Password123#',
-      type: 'mysql',
+      type: 'postgres',
       host: 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
       database: 'd6djl2fa45sf8k',
       port: 5432,
