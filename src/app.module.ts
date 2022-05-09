@@ -29,6 +29,11 @@ import { Quiz } from './quiz/entities/quiz.entity';
       password:
         '4097274a27b3ade6f1d1daf1e20cf55043a6b890c5f32991eea7899b7f1fc4dc',
       entities: [Question, Section, Answer, Quiz],
+      extra: {
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      },
       synchronize: true,
       // logging: true,
       migrationsRun: true,
