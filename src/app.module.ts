@@ -14,12 +14,20 @@ import { Quiz } from './quiz/entities/quiz.entity';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
+      // DEV
+      // type: 'mysql',
+      // host: 'localhost',
+      // database: 'tutorial',
+      // port: 3306,
+      // username: 'root',
+      // password: 'Password123#',
       type: 'mysql',
-      host: 'localhost',
-      database: 'tutorial',
-      port: 3306,
-      username: 'root',
-      password: 'Password123#',
+      host: 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
+      database: 'd6djl2fa45sf8k',
+      port: 5432,
+      username: 'qtmipeehxyutgf',
+      password:
+        '4097274a27b3ade6f1d1daf1e20cf55043a6b890c5f32991eea7899b7f1fc4dc',
       entities: [Question, Section, Answer, Quiz],
       synchronize: true,
       // logging: true,
